@@ -188,7 +188,7 @@ test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, num
 """
 
 
-goal = f'./loss_1024/droneKey_gau_{gau_setting}'
+goal = f'./droneKey'
 print(goal)
 os.makedirs(goal, exist_ok=True)
 
@@ -304,7 +304,7 @@ for epoch in range(num_epochs):
     # 최고 정확도를 기준으로 모델 저장
     if valid_loss < best_val_loss:
         best_val_loss = valid_loss
-        torch.save(model.state_dict(), f'./loss_1024/droneKey_gau_{gau_setting}/best_model.pth')
+        torch.save(model.state_dict(), f'./droneKey/best_model.pth')
         print(f"New best model saved with validation loss: {best_val_loss:.4f}")
         
     end_time = time.time()  # 에폭 종료 시간 기록
@@ -315,7 +315,7 @@ for epoch in range(num_epochs):
     minutes, seconds = divmod(rem, 60)
     print(f"  Epoch Duration: {int(hours)}h {int(minutes)}m {int(seconds)}s\n")  # 에폭 소요 시간 출력
 
-    torch.save(model.state_dict(), f'./loss_1024/droneKey_gau_{gau_setting}/last_model.pth')
+    torch.save(model.state_dict(), f'./droneKey/last_model.pth')
 
 """
 ▶ 결과 저장하기(Loss)
@@ -328,5 +328,5 @@ plt.ylabel('Loss')
 plt.title('Training and Validation Loss - all')
 plt.legend()
 plt.grid(True)
-plt.savefig(f'./loss_1024/droneKey_gau_{gau_setting}/loss_all.png')
+plt.savefig(f'./droneKey/loss_all.png')
 plt.close()
