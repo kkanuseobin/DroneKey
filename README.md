@@ -65,7 +65,6 @@ python train.py
   author = {Seo-Bin Hwang and Yeong-Jun Cho},
   title = {DroneKey: Drone 3D Pose Estimation in Image Sequences using Gated Key-representation and Pose-adaptive Learning},
   year = {2025},
-  note = {Under review at IROS 2025},
   url = {https://github.com/kkanuseobin/DroneKey}
 }
 ```
