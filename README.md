@@ -1,5 +1,5 @@
 # DroneKey
-## DroneKey: Drone 3D Pose Estimation in Image Sequences using Gated Key-representation and Pose-adaptive Learning
+## : Drone 3D Pose Estimation in Image Sequences using Gated Key-representation and Pose-adaptive Learning
 
 ![DroneKey Overview](./assets/overview_.gif)
 
@@ -38,17 +38,25 @@
 # Set up environment
 conda create -n dronekey python=3.9
 conda activate dronekey
-pip install -r requirements.txt
+# pip install -r requirements.txt
 
 # Train
-python train.py --config configs/dronekey.yaml
+python train.py
 
 # Test
-python test.py --model weights/best_model.pth
 ```
 
 ## 🧪 Performance Summary
 ![DroneKey Results](./assets/result_.gif)
+
+### 📊 6DoF Pose Estimation Results
+
+| Scene            | # of Frames | RMSE (m) | MAE (m) | MAE-angle (°)     |
+|------------------|-------------|----------|---------|-------------------|
+| Sequence 11      | 500         | 0.228    | 0.080   | 6.245             |
+| Sequence 12      | 400         | 0.212    | 0.073   | 16.1              |
+| Sequence 13      | 300         | 0.346    | 0.110   | 12.01             |
+| **Average (Weighted)** | *(by frame count)* | **0.221** | **0.076** | **10.62**          |
 
 
 ## 📜 Citation
