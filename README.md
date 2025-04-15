@@ -49,6 +49,10 @@ python train.py
 ## 🧪 Performance Summary
 ![DroneKey Results](./assets/result_.gif)
 
+### 🎯 Keypoint AP (OKS): **99.68%**
+
+### ⚡ Inference Speed: **44 FPS**
+
 ### 📊 6DoF Pose Estimation Results
 
 | Scene            | # of Frames | RMSE (m) | MAE (m) | MAE-angle (°)     |
