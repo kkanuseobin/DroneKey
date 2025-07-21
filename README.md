@@ -1,5 +1,4 @@
-🎉 Accepted for Oral Presentation at IROS 2025 🎤
-IEEE/RSJ International Conference on Intelligent Robots and Systems
+### 🎉 Accepted for Oral Presentation at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025 🎤
 
 # DroneKey
 ## : Drone 3D Pose Estimation in Image Sequences using Gated Key-representation and Pose-adaptive Learning
